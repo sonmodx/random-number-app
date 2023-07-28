@@ -1,0 +1,30 @@
+.front-card {
+  background-color: var(--white-clr);
+}
+
+.front-card form .input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.front-card form .input-field:nth-child(2) {
+  margin-top: 1em;
+}
+
+.front-card form .confirm-btn {
+  cursor: pointer;
+  margin-top: 2em;
+  border: none;
+  outline: transparent;
+  background-color: var(--primary-clr);
+  color: var(--white-clr);
+  letter-spacing: 1.2px;
+  transition: 0.125s ease;
+}
+
+.front-card form .confirm-btn:is(:hover, :focus-visible) {
+  scale: 0.95;
+}

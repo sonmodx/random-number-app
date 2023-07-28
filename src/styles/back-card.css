@@ -1,0 +1,24 @@
+.back-card {
+  transform: rotateY(180deg);
+}
+
+.back-card .modal {
+  max-width: 100%;
+  padding: 2em;
+  margin: auto;
+}
+
+.back-card .modal .close-btn {
+  margin-top: 1.5em;
+  margin-left: 1em;
+}
+
+.back-card .reset {
+  text-align: right;
+}
+
+.back-card .tab {
+  background-color: blanchedalmond;
+  display: inline-block;
+  padding: .5em;
+}

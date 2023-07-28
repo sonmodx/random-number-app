@@ -1,0 +1,86 @@
+:root {
+  --paragraph-fs: clamp(.5rem, .5rem + 3vw, 1.5rem);
+  --header-fs: clamp(1rem, 1rem + 3vw, 2.2rem);
+  --bold-fw: 700;
+  --regular-fw: 400;
+  --main-bg-gradient: linear-gradient(215deg, #a037eb, #dacb56);
+  /* --yellow-bg-gradient: linear-gradient(220deg,hsl(63deg 100% 82%), hsl(66deg 100% 92%), hsl(71deg 100% 96%)); */
+  --white-clr: hsl(0 0% 97%);
+  --black-clr: hsl(0 0% 8%);
+  --primary-clr: #A363FF;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: var(--header-fs);
+  font-weight: var(--bold-fw);
+  margin-bottom: 1em;
+}
+
+input, button {
+  font-family: 'Roboto Slab', serif;
+  font-size: var(--paragraph-fs);
+  font-weight: var(--regular-fw);
+  border-radius: 1em;
+  padding: .5em 1em;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: 'Roboto Slab', serif;
+  font-size: var(--paragraph-fs);
+  font-weight: var(--regular-fw);
+  color: var(--black-clr);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  display: grid;
+  place-items: center;
+  background: var(--main-bg-gradient);
+  background-size: 400% 400%;
+  background-position:25% 0%;
+  overflow-y: hidden;
+}
+
+.app.yellow-bg {
+  animation: toYellow 2s forwards ease;
+  -webkit-animation: toYellow 2s forwards ease;
+  -moz-animation: toYellow 2s forwards ease;
+}
+
+.app .container {
+  width: min(90%, 35rem);
+  margin-inline: auto;
+}
+
+@-webkit-keyframes toYellow {
+  100%{
+    background-position:0% 100%;
+  }
+}
+@-moz-keyframes toYellow {
+  100%{
+    background-position:0% 100%;
+  }
+}
+@keyframes toYellow {
+  100%{
+    background-position:0% 100%;
+  }
+}
